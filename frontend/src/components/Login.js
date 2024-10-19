@@ -44,7 +44,7 @@ const Login = () => {
       setTimeout(() => {
         sessionStorage.removeItem("token");
         alert("Session expired. Please log in again.");
-        navigate("/login"); // Redirect user to login page after session expires
+        navigate("/"); // Redirect user to login page after session expires
       }, 2 * 60 * 60 * 1000);
       alert("Logged In Successfully");
       navigate("/jobs");
