@@ -68,3 +68,65 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Job Posting Board with Email Automation
+
+## Project Overview
+This project is a full-stack job posting board where companies can register, verify their accounts via email, post jobs, and send automated emails to candidates. It utilizes the MERN (MongoDB, Express.js, React.js, Node.js) stack, focusing on authentication and email automation.
+
+## Technologies Used
+- **Frontend**:
+  - **React.js**: For building the responsive user interface.
+  - **React Hook Form**: For handling form validations.
+  - **Zod**: For schema validation to ensure data consistency.
+
+- **Backend**:
+  - **Node.js**: JavaScript runtime for the server.
+  - **Express.js**: Web framework for building RESTful APIs.
+  - **Nodemailer**: For sending automated emails.
+  - **MongoDB**: NoSQL database for storing company details, job postings, and email logs.
+
+- **Authentication**:
+  - **JWT (JSON Web Tokens)**: For secure authentication and authorization.
+
+## Figma Design
+The UI design for this project is based on the following Figma file:
+[Figma Design Link](https://www.figma.com/design/3ru768FzQDG5J6CLC1IPB4/Cuvette-Assignment?node-id=0-1&t=4kRZ1x3vuXhWBiu7-1)
+
+## Functional Requirements
+
+### User Registration (Company)
+- Companies can register by providing basic details.
+- Email verification is required to activate the account; unverified users cannot post jobs.
+
+### Company Login
+- Implement an auto-login system using JWT or session-based authentication.
+
+### Job Posting
+- Authenticated companies can post jobs with the following details:
+  - Job Title
+  - Job Description
+  - Experience Level
+  - Candidate Email
+  - End Date
+
+### Candidate Email Automation
+- Companies can send job alerts or updates to multiple candidates via email.
+- Emails contain:
+  - Job details
+  - Sender information
+
+### Logout
+- Provide an option to clear tokens or sessions and log out.
+
+## Installation
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- MongoDB (running locally or using a cloud service)
+- npm or yarn
+
+### Clone the Repository
+```bash
+git clone <repository-url>
+cd job-posting-board
