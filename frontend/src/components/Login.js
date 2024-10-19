@@ -34,7 +34,7 @@ const Login = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://assignment-pehc.onrender.com/api/auth/login",
         data
       );
       const token = response.data.token;

@@ -43,7 +43,7 @@ const CreateInterview = () => {
       try {
         setIsLoading(true);
         const response = await axios.post(
-          "http://localhost:5000/api/jobs/post",
+          "https://assignment-pehc.onrender.com/api/jobs/post",
           {
             ...data,
             candidateEmails: data.candidateEmails.map((email) => email.value), // Extract email addresses

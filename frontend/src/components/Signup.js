@@ -32,7 +32,7 @@ const Signup = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://assignment-pehc.onrender.com/api/auth/register",
         data
       );
       if (response.status === 201) {
